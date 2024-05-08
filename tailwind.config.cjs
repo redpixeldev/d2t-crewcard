@@ -6,7 +6,7 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
 	theme: {
 		fontFamily: {
-			body: ['', 'sans-serif'],
+			body: ['Proxima Nova', 'sans-serif'],
 		},
 
 		container: {
@@ -15,6 +15,14 @@ module.exports = {
 		},
 
 		extend: {
+			screens: {
+				xs: '430px',
+				sm: '640px',
+				md: '768px',
+				lg: '1024px',
+				xl: '1280px',
+				'2xl': '1536px',
+			},
 			colors: {
 				brand: {
 					primary: '',

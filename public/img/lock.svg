@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.125" height="21" viewBox="0 0 19.125 21">
+  <defs>
+    <filter id="Lock" x="0" y="0" width="19.125" height="21" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Lock)">
+    <path id="Lock-2" data-name="Lock" d="M11.719-7.5h-.937V-8.865a4.245,4.245,0,0,0-4.207-4.26,4.224,4.224,0,0,0-4.23,4.219V-7.5H1.406A1.407,1.407,0,0,0,0-6.094V.469A1.407,1.407,0,0,0,1.406,1.875H11.719A1.407,1.407,0,0,0,13.125.469V-6.094A1.407,1.407,0,0,0,11.719-7.5ZM3.75-8.906a2.817,2.817,0,0,1,2.812-2.812A2.817,2.817,0,0,1,9.375-8.906V-7.5H3.75ZM11.719.469H1.406V-6.094H11.719Z" transform="translate(3 16.12)" fill="#fff"/>
+  </g>
+</svg>

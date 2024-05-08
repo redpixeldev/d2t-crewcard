@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.03" height="31.5" viewBox="0 0 29.03 31.5">
+  <g id="Login" transform="translate(-3.021 -2.022)">
+    <g id="Login-2" data-name="Login" transform="translate(3.771 2.772)">
+      <line id="Stroke-1" x1="19.526" transform="translate(0 15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Stroke-3" d="M9.885,7.106l4.748,4.729L9.885,16.563" transform="translate(4.894 3.165)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Stroke-4" d="M5.5,8.259V6.746A5.974,5.974,0,0,1,11.48.772H19.4A5.959,5.959,0,0,1,25.36,6.731V24.8a5.976,5.976,0,0,1-5.976,5.976H11.462A5.959,5.959,0,0,1,5.5,24.813V23.285" transform="translate(2.171 -0.772)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
