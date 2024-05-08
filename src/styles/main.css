@@ -1,4 +1,4 @@
-@import "fonts.css"; /* for custom fonts */
+@import 'fonts.css'; /* for custom fonts */
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +11,15 @@
 
 	[x-cloak] {
 		@apply !hidden;
+	}
+
+	.hide-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 }
 

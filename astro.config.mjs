@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@astrojs/tailwind';
+import tailwindcssNesting from 'tailwindcss/nesting';
 
 export default defineConfig({
 	compressHTML: false,
@@ -16,6 +17,11 @@ export default defineConfig({
 					entryFileNames: 'assets/main.js',
 					assetFileNames: 'assets/main[extname]',
 				},
+			},
+		},
+		css: {
+			postcss: {
+				plugins: [tailwindcssNesting()],
 			},
 		},
 	},
