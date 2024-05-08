@@ -2,297 +2,371 @@
 
 ---
 
-<div class="relative pt-12">
-	<div class="bg-[linear-gradient(180deg,#1A1A1AE6_0%,#1A1A1AB2_33%,#1A1A1A9A_48%,#1A1A1A80_69%,#ffffff_100%)] absolute inset-0 w-full h-full z-20 "></div>
-	<img src="/img/bg-hero.jpg" class="absolute inset-0 object-cover w-full h-full z-10 bg-top" alt="">
-	<div class="container relative z-30 pt-5 pb-8 px-0">
-		<a href="/" class="block pb-28">
-			<img src="/img/logo.svg" class="mx-auto" alt="">
-		</a>
-		<h1 class="text-[28px] text-white font-bold text-center">CrewCard</h1>
-		<p class="text-white text-[15px] text-center">Die Vorteilskarte mit vielfältigen Benefits</p>
-		<div class="overflow-auto relative">
-			<div class="pt-20 flex justify-center gap-2.5 whitespace-nowrap w-max sm:w-auto px-4 pb-3">
-				<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
-					<div class="rounded-t-lg bg-[#EA9304] px-9 xs:px-10 py-5">
-						<img src="/img/login-small.svg" class="mx-auto h-7 xs:h-8" alt="">
-					</div>
-					<div class="text-white text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-[#EA9304] rounded-b-lg text-center py-2">
-						Anmelden
-					</div>
-				</div>
-				<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
-					<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
-						<img src="/img/benefits.svg" class="mx-auto h-7 xs:h-8" alt="">
-					</div>
-					<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
-						Vorteile
-					</div>
-				</div>
-				<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
-					<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
-						<img src="/img/FAQ.svg" class="mx-auto h-7 xs:h-8" alt="">
-					</div>
-					<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
-						FAQ
-					</div>
-				</div>
-				<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
-					<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
-						<img src="/img/FAQ.svg" class="mx-auto h-7 xs:h-8" alt="">
-					</div>
-					<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
-						FAQ
-					</div>
-				</div>
+<div class="relative">
+	<!-- form -->
+	<div class="hidden absolute inset-0 w-full h-full z-[100] bg-[#f9f9f9]">
+		<div class="bg-white">
+			<div class="container py-4 relative">
+				<img src="/img/arrow-left.svg" class="absolute left-4 top-1/2 -translate-y-1/2 h-5" alt="">
+				<span class="block text-xl font-extrabold text-[#1a1a1a] text-center">Kartenaktivierung</span>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="pt-6 pb-10">
-	<div class="container flex justify-between pb-2 border-b border-[#f3f3f3]">
-		<span class="font-extrabold text-xl text-[#1A1A1A]">Informationen</span>
-		<div class="flex items-center gap-6">
-			<img src="/img/arrow-left.svg" class="opacity-10" alt="">
-			<img src="/img/arrow-left.svg" class="rotate-180" alt="">
-		</div>
-	</div>
-	<div class="px-0 pt-6">
-		<div class="overflow-auto relative">
-			<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[145%] md:w-full">
-				<div class="rounded-lg w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block">
-						<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
-						<span class="bg-white px-6 py-4 rounded-b block">
-							<span class="text-[#1a1a1a] font-bold text-[15px]">Informationen</span>
+		<div class="container">
+			<form class="pt-8">
+				<h2 class="font-extrabold text-xl text-[#1a1a1a] pb-1.5 border-b border-[#1A1A1A0D]">Aktiviere deine CrewCard</h2>
+				<div class="space-y-4 py-8">
+					<div class="relative">
+						<span class="absolute -top-2 left-4 px-1.5 z-20 bg-[#f9f9f9] block text-[#1A1A1A4D] text-xs">Kartencode</span>
+						<input type="text" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="EGCCYA8FLMO">
+					</div>
+					<div class="relative">
+						<span class="absolute -top-2 left-4 px-1.5 z-20 bg-[#f9f9f9] block text-[#1A1A1A4D] text-xs">Art des Vertrages</span>
+						<select name="art" id="art" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full">
+							<option value="Jahresvertrag">Jahresvertrag</option>
+							<option value="lemon">lemon</option>
+						</select>
+					</div>
+					<input type="text" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="Vorname">
+					<input type="text" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="Nachname">
+					<input type="email" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="E-Mail">
+					<input type="email" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="E-Mail wiederholen">
+					<input type="password" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="Passwort">
+					<input type="password" class="border border-[#e8e8e8] rounded px-5 py-5 bg-[#f9f9f9] w-full" placeholder="Passwort wiederholen">
+				</div>
+				<div>
+					<h2 class="font-extrabold text-xl text-[#1a1a1a] pb-1.5 border-b border-[#1A1A1A0D]">Profilbild</h2>
+					<div class="mt-8 border border-dashed border-[#e8e8e8] py-12 px-8 text-center">
+						<span class="text-[15px] text-[#1a1a1a] block pb-2">Bild hier ablegen</span>
+						<span class="text-[13px] text-[#1A1A1A4D] block pb-2">oder</span>
+						<span class="inline-block w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-4">
+							Bild auswählen
 						</span>
-					</a>
+					</div>
 				</div>
-				<div class="rounded-lg w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block relative">
-						<img src="/img/lock.svg" class="absolute top-2 right-3" alt="">
-						<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
-						<span class="bg-white px-6 py-4 rounded-b block">
-							<span class="text-[#1a1a1a] font-bold text-[15px]">Jobs</span>
+				<div class="space-y-4 pb-14 pt-8">
+					<div class="flex">
+						<input id="checkbox" type="checkbox" class="mt-[2px] input-checkbox w-4 h-4 text-blue-600  bg-[#f9f9f9] border border-[#e8e8e8] rounded focus:ring-blue-500 focus:ring-2">
+						<span for="checkbox" class="text-[13px] ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ich habe die <a href="/" class="underline">AGBs</a> gelesen und akzeptiere sie</span>
+					</div>
+					<div class="flex">
+						<input id="checkbox" type="checkbox" class="mt-[2px] input-checkbox w-4 h-4 text-blue-600  bg-[#f9f9f9] border border-[#e8e8e8] rounded focus:ring-blue-500 focus:ring-2">
+						<span for="checkbox" class="text-[13px] ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ich habe die <a href="/" class="underline">Datenschutzerklärung </a> gelesen und stimme dieser zu.</span>
+					</div>
+					<div class="flex">
+						<input id="checkbox" type="checkbox" class="mt-[2px] input-checkbox w-4 h-4 text-blue-600  bg-[#f9f9f9] border border-[#e8e8e8] rounded focus:ring-blue-500 focus:ring-2">
+						<span for="checkbox" class="text-[13px] ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Newsletter abonnieren. Unsere Datenschutzerklärung findest du <a href="/" class="underline">hier.</a></span>
+					</div>
+				</div>
+				<button class="w-full md:w-1/2 flex gap-2 items-center text-white font-extrabold text-lg bg-[#EA9304] rounded py-3 justify-center md:mx-auto">
+					Karte aktivieren
+				</button>
+				<a href="/" class="font-bold text-[13px] text-[#1a1a1a] flex gap-1 pt-10 justify-center">Karte bereits aktiviert? <span class="block text-[#EA9304]">Hier anmelden.</span></a>
+			</form>
+		</div>
+	</div>
+
+	<!-- sticky button -->
+	<div class=" z-[99] bottom-3 fixed inset-x-4">
+		<button class="w-full md:w-1/2 flex gap-2 items-center text-white font-extrabold text-lg bg-[#EA9304] rounded py-3 justify-center md:ml-auto">
+			Karte aktivieren
+			<img src="/img/activate.svg" alt="">
+		</button>
+	</div>
+
+	<div class="relative pt-12">
+		<div class="bg-[linear-gradient(180deg,#1A1A1AE6_0%,#1A1A1AB2_33%,#1A1A1A9A_48%,#1A1A1A80_69%,#ffffff_100%)] absolute inset-0 w-full h-full z-20 "></div>
+		<img src="/img/bg-hero.jpg" class="absolute inset-0 object-cover w-full h-full z-10 bg-top" alt="">
+		<div class="container relative z-30 pt-5 px-0">
+			<a href="/" class="block pb-28">
+				<img src="/img/logo.svg" class="mx-auto" alt="">
+			</a>
+			<h1 class="text-[28px] text-white font-bold text-center">CrewCard</h1>
+			<p class="text-white text-[15px] text-center">Die Vorteilskarte mit vielfältigen Benefits</p>
+		</div>
+		<div class="relative z-30 pb-8 flex justify-center">
+			<div class="overflow-auto relative">
+				<div class="pt-20 flex justify-center gap-2.5 whitespace-nowrap w-max sm:w-auto px-4 pb-3">
+					<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
+						<div class="rounded-t-lg bg-[#EA9304] px-9 xs:px-10 py-5">
+							<img src="/img/login-small.svg" class="mx-auto h-7 xs:h-8" alt="">
+						</div>
+						<div class="text-white text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-[#EA9304] rounded-b-lg text-center py-2">
+							Anmelden
+						</div>
+					</div>
+					<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
+						<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
+							<img src="/img/benefits.svg" class="mx-auto h-7 xs:h-8" alt="">
+						</div>
+						<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
+							Vorteile
+						</div>
+					</div>
+					<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
+						<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
+							<img src="/img/FAQ.svg" class="mx-auto h-7 xs:h-8" alt="">
+						</div>
+						<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
+							FAQ
+						</div>
+					</div>
+					<div class="shadow-[0px_0px_5px_rgba(0,0,0,0.1)] rounded-lg shrink-0">
+						<div class="rounded-t-lg bg-white px-9 xs:px-10 py-5">
+							<img src="/img/FAQ.svg" class="mx-auto h-7 xs:h-8" alt="">
+						</div>
+						<div class="text-[#1a1a1a] text-xs font-bold bg-gradient-to-l from-[#1A1A1A1A] bg-white rounded-b-lg text-center py-2">
+							FAQ
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pt-6 pb-10">
+		<div class="container flex justify-between pb-2 border-b border-[#f3f3f3]">
+			<span class="font-extrabold text-xl text-[#1A1A1A]">Informationen</span>
+			<div class="flex items-center gap-6">
+				<img src="/img/arrow-left.svg" class="opacity-10" alt="">
+				<img src="/img/arrow-left.svg" class="rotate-180" alt="">
+			</div>
+		</div>
+		<div class="px-0 pt-6">
+			<div class="overflow-auto relative">
+				<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[145%] md:w-full">
+					<div class="rounded-lg w-[33.3%]">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block">
+							<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
+							<span class="bg-white px-6 py-4 rounded-b block">
+								<span class="text-[#1a1a1a] font-bold text-[15px]">Informationen</span>
+							</span>
+						</a>
+					</div>
+					<div class="rounded-lg w-[33.3%]">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block relative">
+							<img src="/img/lock.svg" class="absolute top-2 right-3" alt="">
+							<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
+							<span class="bg-white px-6 py-4 rounded-b block">
+								<span class="text-[#1a1a1a] font-bold text-[15px]">Jobs</span>
+							</span>
+						</a>
+					</div>
+					<div class="rounded-lg w-[33.3%]">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block">
+							<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
+							<span class="bg-white px-6 py-4 rounded-b block">
+								<span class="text-[#1a1a1a] font-bold text-[15px]">Informationen</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pb-10">
+		<div class="container">
+			<div class="pb-8">
+				<h1 class="text-[28px] text-[#1a1a1a] font-bold text-center">Deiner CrewCard</h1>
+				<p class="text-[#1a1a1a] text-[15px] text-center">Alle Vorteile im Überblick</p>
+			</div>
+			<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
+				<span class="font-extrabold text-xl text-[#1A1A1A]">Erlebnisse</span>
+				<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
+			</div>
+		</div>
+		<div class="px-0 pt-6">
+			<div class="overflow-auto relative">
+				<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="flex justify-end">
+									<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
+										-20%
+									</span>
+								</span>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Skigebiet Obereggen</span>
+									<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								</div>
+							</div>
 						</span>
-					</a>
-				</div>
-				<div class="rounded-lg w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded-b block">
-						<img src="/img/information.jpeg" class="rounded-t h-40 sm:h-[18rem] md:h-40 w-full object-cover" alt="">
-						<span class="bg-white px-6 py-4 rounded-b block">
-							<span class="text-[#1a1a1a] font-bold text-[15px]">Informationen</span>
+							<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="flex justify-end">
+									<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
+										-20%
+									</span>
+								</span>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Skigebiet Obereggen</span>
+									<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								</div>
+							</div>
 						</span>
-					</a>
+							<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="flex justify-end">
+									<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
+										-20%
+									</span>
+								</span>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Skigebiet Obereggen</span>
+									<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								</div>
+							</div>
+						</span>
+							<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="pb-10">
-	<div class="container">
-		<div class="pb-8">
-			<h1 class="text-[28px] text-[#1a1a1a] font-bold text-center">Deiner CrewCard</h1>
-			<p class="text-[#1a1a1a] text-[15px] text-center">Alle Vorteile im Überblick</p>
+	<div class="pb-10">
+		<div class="container">
+			<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
+				<span class="font-extrabold text-xl text-[#1A1A1A]">Aktivitäten & Events</span>
+				<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
+			</div>
 		</div>
-		<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
-			<span class="font-extrabold text-xl text-[#1A1A1A]">Erlebnisse</span>
-			<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
-		</div>
-	</div>
-	<div class="px-0 pt-6">
-		<div class="overflow-auto relative">
-			<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="flex justify-end">
-								<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
-									-20%
+		<div class="px-0 pt-6">
+			<div class="overflow-auto relative">
+				<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="pt-0 xs:pt-3">
+									<span class=" w-auto text-white font-bold text-[15px]">
+										Donnerstag, 04.04
+									</span>
 								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Skigebiet Obereggen</span>
-								<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Lamawanderung</span>
+									<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
+									<p class="text-white text-[13px]">Ortschaft</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="flex justify-end">
-								<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
-									-20%
+						</span>
+							<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="pt-0 xs:pt-3">
+									<span class="w-auto text-white font-bold text-[15px]">
+										Donnerstag, 04.04
+									</span>
 								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Skigebiet Obereggen</span>
-								<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Lamawanderung</span>
+									<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
+									<p class="text-white text-[13px]">Ortschaft</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="flex justify-end">
-								<span class=" w-auto bg-[#EA9304] rounded-[25px] text-white font-bold text-[15px] py-2 px-3.5">
-									-20%
+						</span>
+							<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex flex-col justify-between h-full">
+								<span class="pt-0 xs:pt-3">
+									<span class=" w-auto text-white font-bold text-[15px]">
+										Donnerstag, 04.04
+									</span>
 								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Skigebiet Obereggen</span>
-								<p class="text-white text-[13px]">Skifahren und rodeln unterm Latemar</p>
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Lamawanderung</span>
+									<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
+									<p class="text-white text-[13px]">Ortschaft</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/adventure.jpg" class="rounded object-cover h-72 w-full" alt="">
-					</a>
+						</span>
+							<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="pb-10">
-	<div class="container">
-		<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
-			<span class="font-extrabold text-xl text-[#1A1A1A]">Aktivitäten & Events</span>
-			<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
-		</div>
-	</div>
-	<div class="px-0 pt-6">
-		<div class="overflow-auto relative">
-			<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="pt-0 xs:pt-3">
-								<span class=" w-auto text-white font-bold text-[15px]">
-									Donnerstag, 04.04
-								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Lamawanderung</span>
-								<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
-								<p class="text-white text-[13px]">Ortschaft</p>
-							</div>
-						</div>
-					</span>
-						<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="pt-0 xs:pt-3">
-								<span class="w-auto text-white font-bold text-[15px]">
-									Donnerstag, 04.04
-								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Lamawanderung</span>
-								<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
-								<p class="text-white text-[13px]">Ortschaft</p>
-							</div>
-						</div>
-					</span>
-						<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex flex-col justify-between h-full">
-							<span class="pt-0 xs:pt-3">
-								<span class=" w-auto text-white font-bold text-[15px]">
-									Donnerstag, 04.04
-								</span>
-							</span>
-							<div>
-								<span class="font-extrabold text-white text-lg block">Lamawanderung</span>
-								<span class="font-bold text-[13px] text-[#FFFFFF98] block pb-0 xs:pb-1">16:00-17:00</span>
-								<p class="text-white text-[13px]">Ortschaft</p>
-							</div>
-						</div>
-					</span>
-						<img src="/img/events.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
-				</div>
+	<div class="pb-4">
+		<div class="container">
+			<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
+				<span class="font-extrabold text-xl text-[#1A1A1A]">News</span>
+				<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="pb-4">
-	<div class="container">
-		<div class="flex justify-between items-center pb-1.5 border-b border-[#f3f3f3]">
-			<span class="font-extrabold text-xl text-[#1A1A1A]">News</span>
-			<span class="font-extrabold text-xs text-[#EA9304]">Alle anzeigen</span>
-		</div>
-	</div>
-	<div class="px-0 pt-6">
-		<div class="overflow-auto relative">
-			<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex items-end h-full">
-							<div>
-								<span class="font-extrabold text-white text-lg block">Sanft Mobiles Dolomiten-Erlebnis</span>
-								<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+		<div class="px-0 pt-6">
+			<div class="overflow-auto relative">
+				<div class="flex gap-2.5 whitespace-nowrap px-4 pb-3 w-[270%] xs:w-[145%] md:w-full">
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex items-end h-full">
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Sanft Mobiles Dolomiten-Erlebnis</span>
+									<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex items-end h-full">
-							<div>
-								<span class="font-extrabold text-white text-lg block">Carezza All Family</span>
-								<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+						</span>
+							<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex items-end h-full">
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block">Carezza All Family</span>
+									<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
-				</div>
-				<div class="rounded w-[45%] xs:w-[33.3%]">
-					<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
-						<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
-					<span class="absolute z-30 p-2.5 block w-full h-full">
-						<div class="flex items-end h-full">
-							<div>
-								<span class="font-extrabold text-white text-lg block break-all">Carezza All Family</span>
-								<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+						</span>
+							<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
+					<div class="rounded w-[45%] xs:w-[33.3%] whitespace-normal">
+						<a href="/" class="shadow-[0px_2px_5px_rgba(0,0,0,0.1)] rounded block relative">
+							<div class=" absolute rounded inset-0 w-full h-full z-20 bg-[linear-gradient(180deg,#1D202598_0%,#2C2E334D_15%,#4F50534D_49%,#1D2025E6_100%)]"></div>
+						<span class="absolute z-30 p-2.5 block w-full h-full">
+							<div class="flex items-end h-full">
+								<div>
+									<span class="font-extrabold text-white text-lg/[24px] block break-all">Carezza All Family</span>
+									<p class="text-white text-[13px]">Die Dolomiten sanft mobil erleben</p>
+								</div>
 							</div>
-						</div>
-					</span>
-						<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
-					</a>
+						</span>
+							<img src="/img/news.jpeg" class="w-full rounded object-cover h-72" alt="">
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
