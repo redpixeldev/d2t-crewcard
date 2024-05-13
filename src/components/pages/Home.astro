@@ -31,7 +31,7 @@
 			<div class='hide-scrollbar relative overflow-auto'>
 				<div class='flex w-max justify-center gap-2.5 whitespace-nowrap px-4 pb-3 pt-20 sm:w-auto'>
 					<div class='shrink-0 rounded-lg shadow-[0px_0px_5px_rgba(0,0,0,0.1)]'>
-						<div class='rounded-t-lg bg-[#EA9304] px-9 py-5 xs:px-10'>
+						<div class='min-w-[115px] rounded-t-lg bg-[#EA9304] px-9 py-5 xs:px-10'>
 							<img
 								src='/img/login-small.svg'
 								class='mx-auto h-7 xs:h-8'
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class='shrink-0 rounded-lg shadow-[0px_0px_5px_rgba(0,0,0,0.1)]'>
-						<div class='rounded-t-lg bg-white px-9 py-5 xs:px-10'>
+						<div class='min-w-[115px] rounded-t-lg bg-white px-9 py-5 xs:px-10'>
 							<img
 								src='/img/benefits.svg'
 								class='mx-auto h-7 xs:h-8'
@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class='shrink-0 rounded-lg shadow-[0px_0px_5px_rgba(0,0,0,0.1)]'>
-						<div class='rounded-t-lg bg-white px-9 py-5 xs:px-10'>
+						<div class='min-w-[115px] rounded-t-lg bg-white px-9 py-5 xs:px-10'>
 							<img
 								src='/img/FAQ.svg'
 								class='mx-auto h-7 xs:h-8'
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<div class='shrink-0 rounded-lg shadow-[0px_0px_5px_rgba(0,0,0,0.1)]'>
-						<div class='rounded-t-lg bg-white px-9 py-5 xs:px-10'>
+						<div class='min-w-[115px] rounded-t-lg bg-white px-9 py-5 xs:px-10'>
 							<img
 								src='/img/FAQ.svg'
 								class='mx-auto h-7 xs:h-8'
@@ -87,169 +87,167 @@
 		</div>
 	</div>
 
-	<div class='pb-10 pt-6'>
-		<div
-			class='px-0 pt-6'
-			x-data={`
-				{
-					init() {
-							document.addEventListener('DOMContentLoaded', () => {
-								new Splide(this.$refs.splide, {
-										perPage: 3,
-										gap: '1rem',
-										padding: {
-											right: '20px'
+	<div
+		class='px-0pb-10 pt-5'
+		x-data={`
+			{
+				init() {
+						document.addEventListener('DOMContentLoaded', () => {
+							new Splide(this.$refs.splide, {
+									perPage: 3,
+									gap: '1rem',
+									padding: {
+										right: '20px'
+									},
+									breakpoints: {
+										767: {
+											perPage: 2,
 										},
-										breakpoints: {
-											767: {
-												perPage: 2,
-											},
-										},
-								}).mount()
-							})
-					},
-				}
-			`}>
-			<section
-				class='splide ml-4'
-				x-ref='splide'>
-				<div class='flex justify-between border-b border-[#f3f3f3] px-0 pb-2'>
-					<span class='shrink-0 text-xl font-extrabold text-[#1A1A1A]'>Informationen</span>
-					<div class='splide__arrows splide__arrows--ltr relative right-0 z-[99] flex w-full justify-end'>
-						<button
-							class='splide__arrow splide__arrow--prev relative left-auto disabled:!opacity-30'
-							type='button'
-							aria-label='Previous slide'
-							aria-controls='splide01-track'>
-							<img
-								src='/img/arrow-left.svg'
-								class=''
-								alt=''
-							/>
-						</button>
-						<button
-							class='splide__arrow splide__arrow--next relative right-auto disabled:!opacity-30'
-							type='button'
-							aria-label='Next slide'
-							aria-controls='splide01-track'>
-							<img
-								src='/img/arrow-left.svg'
-								class='rotate-180'
-								alt=''
-							/>
-						</button>
-					</div>
+									},
+							}).mount()
+						})
+				},
+			}
+		`}>
+		<section
+			class='splide ml-4'
+			x-ref='splide'>
+			<div class='flex justify-between border-b border-gray-100 px-0'>
+				<span class='shrink-0 text-xl font-extrabold text-[#1A1A1A]'>Informationen</span>
+				<div class='splide__arrows splide__arrows--ltr relative right-0 z-[99] flex w-full justify-end'>
+					<button
+						class='splide__arrow splide__arrow--prev relative left-auto text-[#1A1A1A] !opacity-100 disabled:!opacity-20'
+						type='button'
+						aria-label='Previous slide'
+						aria-controls='splide01-track'>
+						<img
+							src='/img/arrow-left.svg'
+							class=''
+							alt=''
+						/>
+					</button>
+					<button
+						class='splide__arrow splide__arrow--next relative right-auto text-[#1A1A1A] !opacity-100 disabled:!opacity-20'
+						type='button'
+						aria-label='Next slide'
+						aria-controls='splide01-track'>
+						<img
+							src='/img/arrow-left.svg'
+							class='rotate-180'
+							alt=''
+						/>
+					</button>
 				</div>
+			</div>
 
-				<div class='splide__track'>
-					<ul class='splide__list px-4 pb-3'>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
-								</span>
-							</a>
-						</li>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='relative block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/lock.svg'
-									class='absolute right-3 top-2'
-									alt=''
-								/>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Jobs</span>
-								</span>
-							</a>
-						</li>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
-								</span>
-							</a>
-						</li>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
-								</span>
-							</a>
-						</li>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='relative block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/lock.svg'
-									class='absolute right-3 top-2'
-									alt=''
-								/>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Jobs</span>
-								</span>
-							</a>
-						</li>
-						<li class='splide__slide block rounded-lg'>
-							<a
-								href='/'
-								class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
-								<img
-									src='/img/information.jpeg'
-									class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
-									alt=''
-								/>
-								<span class='block rounded-b bg-white px-6 py-4'>
-									<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
+			<div class='splide__track mt-5 pb-8'>
+				<ul class='splide__list px-4'>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
+							</span>
+						</a>
+					</li>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='relative block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/lock.svg'
+								class='absolute right-3 top-2'
+								alt=''
+							/>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Jobs</span>
+							</span>
+						</a>
+					</li>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
+							</span>
+						</a>
+					</li>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
+							</span>
+						</a>
+					</li>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='relative block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/lock.svg'
+								class='absolute right-3 top-2'
+								alt=''
+							/>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Jobs</span>
+							</span>
+						</a>
+					</li>
+					<li class='splide__slide block rounded-lg'>
+						<a
+							href='/'
+							class='block rounded-b shadow-[0px_2px_5px_rgba(0,0,0,0.1)]'>
+							<img
+								src='/img/information.jpeg'
+								class='h-40 w-full rounded-t object-cover sm:h-[18rem] md:h-40'
+								alt=''
+							/>
+							<span class='block rounded-b bg-white px-6 py-4'>
+								<span class='text-[15px] font-bold text-[#1a1a1a]'>Informationen</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
 
 	<div class='pb-10'>
-		<div class='container'>
+		<div class='container pr-0'>
 			<div class='pb-8'>
 				<h1 class='text-center text-[28px] font-bold text-[#1a1a1a]'>Deiner CrewCard</h1>
 				<p class='text-center text-[15px] text-[#1a1a1a]'>Alle Vorteile im Überblick</p>
 			</div>
-			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5'>
+			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5 pr-6'>
 				<span class='text-xl font-extrabold text-[#1A1A1A]'>Erlebnisse</span>
 				<span class='text-xs font-extrabold text-[#EA9304]'>Alle anzeigen</span>
 			</div>
@@ -299,7 +297,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -326,7 +324,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -353,7 +351,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -380,7 +378,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -407,7 +405,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -434,7 +432,7 @@
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Skigebiet Obereggen</span>
-											<p class='text-[13px] text-white'>Skifahren und rodeln unterm Latemar</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Skifahren und rodeln unterm Latemar</p>
 										</div>
 									</div>
 								</span>
@@ -452,8 +450,8 @@
 	</div>
 
 	<div class='pb-10'>
-		<div class='container'>
-			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5'>
+		<div class='container pr-0'>
+			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5 pr-6'>
 				<span class='text-xl font-extrabold text-[#1A1A1A]'>Aktivitäten & Events</span>
 				<span class='text-xs font-extrabold text-[#EA9304]'>Alle anzeigen</span>
 			</div>
@@ -497,12 +495,12 @@
 								<span class='absolute z-30 block h-full w-full p-2.5'>
 									<div class='flex h-full flex-col justify-between'>
 										<span class='pt-0 xs:pt-3'>
-											<span class='w-auto text-[15px] font-bold text-white'> Donnerstag, 04.04</span>
+											<span class='w-auto text-[13px] font-bold text-white'> Donnerstag, 04.04</span>
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Lamawanderung</span>
 											<span class='block pb-0 text-[13px] font-bold text-[#FFFFFF98] xs:pb-1'>16:00-17:00</span>
-											<p class='text-[13px] text-white'>Ortschaft</p>
+											<p class='text-[13px] text-[#FFFFFF98]'>Ortschaft</p>
 										</div>
 									</div>
 								</span>
@@ -523,12 +521,12 @@
 								<span class='absolute z-30 block h-full w-full p-2.5'>
 									<div class='flex h-full flex-col justify-between'>
 										<span class='pt-0 xs:pt-3'>
-											<span class='w-auto text-[15px] font-bold text-white'> Donnerstag, 04.04</span>
+											<span class='w-auto text-[13px] font-bold text-white'> Donnerstag, 04.04</span>
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Lamawanderung</span>
 											<span class='block pb-0 text-[13px] font-bold text-[#FFFFFF98] xs:pb-1'>16:00-17:00</span>
-											<p class='text-[13px] text-white'>Ortschaft</p>
+											<p class='text-[13px] text-[#FFFFFF98]'>Ortschaft</p>
 										</div>
 									</div>
 								</span>
@@ -549,12 +547,12 @@
 								<span class='absolute z-30 block h-full w-full p-2.5'>
 									<div class='flex h-full flex-col justify-between'>
 										<span class='pt-0 xs:pt-3'>
-											<span class='w-auto text-[15px] font-bold text-white'> Donnerstag, 04.04</span>
+											<span class='w-auto text-[13px] font-bold text-white'> Donnerstag, 04.04</span>
 										</span>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Lamawanderung</span>
 											<span class='block pb-0 text-[13px] font-bold text-[#FFFFFF98] xs:pb-1'>16:00-17:00</span>
-											<p class='text-[13px] text-white'>Ortschaft</p>
+											<p class='text-[13px] text-[#FFFFFF98]'>Ortschaft</p>
 										</div>
 									</div>
 								</span>
@@ -572,8 +570,8 @@
 	</div>
 
 	<div class='pb-4'>
-		<div class='container'>
-			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5'>
+		<div class='container pr-0'>
+			<div class='flex items-center justify-between border-b border-[#f3f3f3] pb-1.5 pr-6'>
 				<span class='text-xl font-extrabold text-[#1A1A1A]'>News</span>
 				<span class='text-xs font-extrabold text-[#EA9304]'>Alle anzeigen</span>
 			</div>
@@ -620,7 +618,7 @@
 											<span class='block text-lg/[24px] font-extrabold text-white'
 												>Sanft Mobiles Dolomiten-Erlebnis</span
 											>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -642,7 +640,7 @@
 									<div class='flex h-full items-end'>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Carezza All Family</span>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -664,7 +662,7 @@
 									<div class='flex h-full items-end'>
 										<div>
 											<span class='block break-all text-lg/[24px] font-extrabold text-white'>Carezza All Family</span>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -688,7 +686,7 @@
 											<span class='block text-lg/[24px] font-extrabold text-white'
 												>Sanft Mobiles Dolomiten-Erlebnis</span
 											>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -710,7 +708,7 @@
 									<div class='flex h-full items-end'>
 										<div>
 											<span class='block text-lg/[24px] font-extrabold text-white'>Carezza All Family</span>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -732,7 +730,7 @@
 									<div class='flex h-full items-end'>
 										<div>
 											<span class='block break-all text-lg/[24px] font-extrabold text-white'>Carezza All Family</span>
-											<p class='text-[13px] text-white'>Die Dolomiten sanft mobil erleben</p>
+											<p class='text-[13px] text-[#FFFFFFCC]'>Die Dolomiten sanft mobil erleben</p>
 										</div>
 									</div>
 								</span>
@@ -754,11 +752,12 @@
 		class='fixed inset-0 z-[100] h-full w-full overflow-auto bg-[#f9f9f9]'
 		:class="isFormOpen ? 'block' : 'hidden'">
 		<div class='bg-white'>
-			<div class='container relative py-4'>
-				<button @click='isFormOpen = false'>
+			<div class='container relative py-[22px]'>
+				<button
+					@click='isFormOpen = false'
+					class='absolute top-1/2 block -translate-y-1/2'>
 					<img
 						src='/img/arrow-left.svg'
-						class='absolute left-4 top-10 h-5'
 						alt=''
 					/>
 					<span class='sr-only'>Back button</span>
@@ -767,7 +766,7 @@
 			</div>
 		</div>
 		<div class='container'>
-			<form class='pt-8'>
+			<form class='py-8'>
 				<h2 class='border-b border-[#1A1A1A0D] pb-1.5 text-xl font-extrabold text-[#1a1a1a]'>
 					Aktiviere deine CrewCard
 				</h2>
@@ -778,7 +777,7 @@
 						>
 						<input
 							type='text'
-							class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+							class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 							placeholder='EGCCYA8FLMO'
 						/>
 					</div>
@@ -789,39 +788,39 @@
 						<select
 							name='art'
 							id='art'
-							class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'>
+							class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'>
 							<option value='Jahresvertrag'>Jahresvertrag</option>
 							<option value='lemon'>lemon</option>
 						</select>
 					</div>
 					<input
 						type='text'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='Vorname'
 					/>
 					<input
 						type='text'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='Nachname'
 					/>
 					<input
 						type='email'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='E-Mail'
 					/>
 					<input
 						type='email'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='E-Mail wiederholen'
 					/>
 					<input
 						type='password'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='Passwort'
 					/>
 					<input
 						type='password'
-						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-5'
+						class='w-full rounded border border-[#e8e8e8] bg-[#f9f9f9] px-5 py-[15px]'
 						placeholder='Passwort wiederholen'
 					/>
 				</div>
@@ -830,7 +829,8 @@
 					<div class='mt-8 border border-dashed border-[#e8e8e8] px-8 py-12 text-center'>
 						<span class='block pb-2 text-[15px] text-[#1a1a1a]'>Bild hier ablegen</span>
 						<span class='block pb-2 text-[13px] text-[#1A1A1A4D]'>oder</span>
-						<span class='inline-block w-auto rounded-[25px] bg-[#EA9304] px-4 py-2 text-[15px] font-bold text-white'>
+						<span
+							class='inline-block w-auto rounded-[25px] bg-[#EA9304] px-4 py-[5.75px] text-[15px] font-bold text-white'>
 							Bild auswählen
 						</span>
 					</div>
